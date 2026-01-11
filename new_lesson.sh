@@ -38,8 +38,6 @@ echo """# Lesson $LESSON_NUM -
 
 > Theme:
 
-
-
 # End-of-Lesson Reflection
 
 ## What I Leaned.

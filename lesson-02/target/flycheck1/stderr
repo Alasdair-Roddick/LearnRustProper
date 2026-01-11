@@ -1,4 +1,52 @@
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.00s
+   0.007149375s  INFO prepare_target{force=false package_id=lesson-02 v0.1.0 (/Users/alasdairroddick/Development/LearnRust/lesson-02) target="lesson-02"}: cargo::core::compiler::fingerprint: fingerprint error for lesson-02 v0.1.0 (/Users/alasdairroddick/Development/LearnRust/lesson-02)/Check { test: false }/TargetInner { name: "lesson-02", doc: true, ..: with_path("/Users/alasdairroddick/Development/LearnRust/lesson-02/src/main.rs", Edition2024) }
+   0.007174208s  INFO prepare_target{force=false package_id=lesson-02 v0.1.0 (/Users/alasdairroddick/Development/LearnRust/lesson-02) target="lesson-02"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/alasdairroddick/Development/LearnRust/lesson-02/target/debug/.fingerprint/lesson-02-3e68f9de0073f6a2/bin-lesson-02`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+   0.021000833s  INFO prepare_target{force=false package_id=lesson-02 v0.1.0 (/Users/alasdairroddick/Development/LearnRust/lesson-02) target="lesson-02"}: cargo::core::compiler::fingerprint: fingerprint error for lesson-02 v0.1.0 (/Users/alasdairroddick/Development/LearnRust/lesson-02)/Check { test: true }/TargetInner { name: "lesson-02", doc: true, ..: with_path("/Users/alasdairroddick/Development/LearnRust/lesson-02/src/main.rs", Edition2024) }
+   0.021016166s  INFO prepare_target{force=false package_id=lesson-02 v0.1.0 (/Users/alasdairroddick/Development/LearnRust/lesson-02) target="lesson-02"}: cargo::core::compiler::fingerprint:     err: failed to read `/Users/alasdairroddick/Development/LearnRust/lesson-02/target/debug/.fingerprint/lesson-02-77a286b7f5d24c75/test-bin-lesson-02`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: std::backtrace::Backtrace::create
+   1: std::backtrace::Backtrace::capture
+   2: cargo_util::paths::read_bytes
+   3: cargo_util::paths::read
+   4: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   5: cargo::core::compiler::fingerprint::prepare_target
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: std::rt::lang_start_internal
+  17: _main
+    Checking lesson-02 v0.1.0 (/Users/alasdairroddick/Development/LearnRust/lesson-02)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.24s
