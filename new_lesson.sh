@@ -32,14 +32,15 @@ touch "$NOTES_FILE"
 echo """# Lesson $LESSON_NUM - 
 
 
-# End-of-Lesson Reflection
 
-## Subject Objectives:
+
+## Lesson $LESSON_NUM Objectives:
 
 > Theme:
 
 
 
+# End-of-Lesson Reflection
 
 ## What I Leaned.
 
