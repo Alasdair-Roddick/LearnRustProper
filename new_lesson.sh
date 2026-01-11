@@ -29,4 +29,24 @@ cd "$DIR_NAME"
 # Create notes file
 touch "$NOTES_FILE"
 
+echo """# Lesson $LESSON_NUM - 
+
+
+# End-of-Lesson Reflection
+
+## Subject Objectives:
+
+> Theme:
+
+
+
+
+## What I Leaned.
+
+## What Confused Me?
+
+## What Mental Model Shifted?
+
+""" > "$NOTES_FILE"
+
 echo "Created $BRANCH_NAME with project $DIR_NAME"

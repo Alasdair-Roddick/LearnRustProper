@@ -86,3 +86,11 @@ Example:
 └── README.md
 ```
 
+---
+
+# Cheat Sheet
+- Ownership -> who is responsible for cleanup
+- Borrowing -> temporary, scoped permissions
+- Mutability -> authority, no convernience
+- Functions -> data transforms by default
+- Compilation Errors -> design feedback, not failures
